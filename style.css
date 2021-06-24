@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.container{
+    margin: 0 auto;
+	max-width: 990px;
+	position: relative;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.topbar{
+    height: 26px;
+    background-color: #f6f6f6;
+   
+}
+.topbar .top{
+    float: right;
+}
+.topbar .top li{
+    float:left;
+    margin: 5px;
+}
+.top li a{
+    text-decoration: none;
+    font-size:16px;
+}
+.top li img{
+    margin-right: 5px;
+    float: left;
+} 
+.top li span{
+    float: left;
+}
+.facebook span{
+    color: rgb(68, 96, 160);
+}
+.facebook{
+    border-right:2px solid rgb(204, 204, 204);
+    padding-right: 8px;
+}
+.twitter span{
+    color: rgb(0, 170, 236);
+}
+.clearfix{
+    clear: both;
+}
+.menu{
+    background-color: #fff;
+    height: 45px;
+    display: flex;
+	justify-content: space-between;
+}
+.menu .logo{
+    float: left;
+}
+
+.menu .logo a{
+    background-image: url(images/logo.png);
+    width: 209px;
+    height: 45px;
+    display: block;
+    line-height: 49px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu .dropdown-menu{
+    display: flex;
+	padding: 0px 8px;
+    z-index: 5;
+}
+.menu .dropdown-menu li a{
+    font-size: 15px;
+	text-decoration: none;
+    color:	#66cdaa;
+    display: block;
+    border-bottom: 3px solid #fff;
+    padding: 17px 10px;
+	margin-left: 25px;
+    text-align: center;
+}
+
+.menu .dropdown-menu  li a:hover , .menu .dropdown-menu li a.active{
+	border-bottom: 3px solid #66cdaa;
+}
+.dropdown-menu ul{
+    display: none;
+}
+.dropdown-menu li .dropdown-open li a{
+    color: rgb(115, 4, 219);
+    background-color: rgba(255, 255, 255, 0.616);
+}
+.dropdown-menu li .dropdown-open li a:hover{
+    color:#fff	;
+    background-color: #66cdaa;
+}
+
+.swiper-container{
+    margin-top: 52px;
+}
+.banner{
+	height: 346px;
+	display: flex;
+    align-items: center;
+    
+}
+.banner h2{
+	font-size: 30px;
+    line-height: 1.3;
+	padding: 30px 20px;
+    color: #fff;
+	background: rgba(0,0,0,0.2);
+	width: 100%;;
+	z-index:3;
+}
+.b-img1{
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+}
+.b-img2{
+	background: url(http://dfi5wu8thl82p.cloudfront.net/wp-content/uploads/2016/11/BeFunky-Collage3.jpg);
+}
+.b-img3{
+	background:  url(https://tse3.mm.bing.net/th?id=OIP.hx2yMS3xN9oPCaY5nfyu6wHaDN&pid=Api&P=0&w=478&h=208);
+}
+/* swiperCSS */
+.swiper-container {
+    width: 990px;
+    height: 320px;
+}
+
+.rect p{
+    padding: 5px;
+    box-sizing: border-box;
+}
+.course{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.course-item{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 276px;
+    box-shadow: 1px 1px 5px gray;
+    padding: 10px;
+}
+.course-item img{
+    width: 100%;
+}
+.course-item h2{
+    text-align: center;
+    font-size:15px;
+    font-weight: bold;
+}
+.course-item p{
+    margin-top: 5px;
+    text-align: center;
+    font-size:10px;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 20px;
+}
+.course-item .jquery_p{
+    text-align: left;
+    padding-left: 30%;
+}
+.course-item a{
+    width: 180px;
+    height: 120px;
+}
+.lightboxOverlay{
+    background-color: rgb(20, 101, 148) !important ;
+}
+.lb-container{
+    width: 500px !important;
+}
+.lb-image{
+    width: 600px !important;
+    height: 400px !important;
+}
+table{
+    text-align:left;
+    border-collapse: collapse;
+	border-spacing: 0;
+    font-size:13px;
+    width:760px;
+    margin:auto;
+    margin-bottom: 50px;
+}
+table caption{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size:20px;
+}
+.compare tr,.compare td{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.compare tr:hover{
+   background: rgba(128, 128, 128, 0.171);
+}
+.compare th{
+    background-color: rgb(247, 247, 247);
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+}
+.compare td{
+    padding: 10px;
+}
+.compare .green{
+    color: rgb(0, 204, 153);
+}
+.form_box{
+    width: 900px;
+    height: 360px;  
+    background-image: url(images/footer_bg.png);
+    background-repeat: repeat-x;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.form_box h2{
+    color: #fff;
+    font-size:20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.form_box h2 p{
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+form textarea{
+    border-radius: 5px;
+    width: 380px;
+    text-indent: 5px;
+    color: gray;
+    height: 200px;
+    padding: 6px 5px;
+}
+.blank input{
+    width: 420px;
+    border-radius:3px;
+    height: 25px;
+    text-indent: 5px;
+    border:  none;
+}
+::-webkit-input-placeholder { /* Chrome, Safari */
+    color: #000;
+  }
+.blank label, .blank button{
+    display: block;
+    color: #fff;
+}
+.blank{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.blank button{
+    width: 60px;
+    background-color: rgb(0, 203, 153);
+    margin-left: 365px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 3px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+}
+.blank button:hover{
+    background-color:rgb(0, 170, 236);
+}
+.blank button:active{
+    color:rgb(228, 85, 85);
+}
+.footerlogo{
+    float: left;
+    padding-left: 20px;
+}
+.footerlogo h1 a{
+    background-image: url(images/footerLogo.png);
+    width: 171px;
+    height: 36px;
+    display: block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer{
+    margin: auto;
+    width: 909px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    
+}
+.contact{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact li a{
+    color:rgb(238, 7,114);
+    text-decoration: none;
+}
+.gotop{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.gotop img{
+    width: 50px;
+    height: 50px;
+}
